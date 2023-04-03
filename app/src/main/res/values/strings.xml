@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MedicalDosing</string>
+    <string name="dropdownAgeText">Age</string>
+    <string name="editTextWeightText">Weight (kg)</string>
+    <string name="editTextWeightContentDesc">Enter your patient weight in kilograms.</string>
+    <string name="dosingBtnText">Get Dosing</string>
+    <string name="tylenolText">Tylenol</string>
+    <string name="advilText">Advil</string>
+    <string name="cefazolinText">Cefazolin (on-call)</string>
+    <string name="marcaineText">0.25% Marcaine (Bupivicaine) with Epinephrine</string>
+    <string-array name="ageOptions">
+        <item>Neonate</item>
+        <item>Infant</item>
+        <item>Adolescent</item>
+        <item>Adult</item>
+    </string-array>
+    <string-array name="tylenolDosingResults">
+        <item> mg/kg q6h</item>
+        <item> mg/kg q6h</item>
+        <item> mg/kg q4-6h</item>
+        <item>650 mg q4-6h</item>
+    </string-array>
+</resources>

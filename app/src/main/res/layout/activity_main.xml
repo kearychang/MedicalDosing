@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textFieldAge"
+                android:text="@string/dropdownAgeText"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black" />
+
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/ages"
+                android:entries="@array/ageOptions"
+                android:prompt="@string/dropdownAgeText"
+                android:layout_weight="4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:text="@string/editTextWeightText"
+                android:id="@+id/textWeight"
+                android:layout_weight="6"
+                android:fontFamily="sans-serif-black" />
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:inputType="number"
+                android:id="@+id/textFieldWeight"
+                android:contentDescription="@string/editTextWeightContentDesc"
+                android:layout_height="48dp"
+                android:layout_weight="4" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+
+        <Button
+                android:text="@string/dosingBtnText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dosingBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="120dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:text="@string/tylenolText"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4" />
+
+        <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:id="@+id/tylenolDosingText" />
+
+        <TextView
+                android:text="@string/advilText"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4" />
+
+        <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:id="@+id/advilDosingText" />
+
+        <TextView
+                android:text="@string/cefazolinText"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4" />
+
+        <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:id="@+id/cefazolinDosingText" />
+
+        <TextView
+                android:text="@string/marcaineText"
+                android:fontFamily="sans-serif-black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4" />
+
+        <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:id="@+id/marcaineDosingText" />
+    </LinearLayout>
+
+</LinearLayout>
